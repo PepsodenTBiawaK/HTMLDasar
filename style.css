@@ -1,0 +1,262 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End CSS RESET */
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+ .cf:before,
+ .cf:after {
+     content: " "; /* 1 */
+     display: table; /* 2 */
+ }
+ 
+ .cf:after {
+     clear: both;
+ }
+ 
+ /**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+ .cf {
+     *zoom: 1;
+ }
+ /* END CF */
+
+
+
+
+
+/* CSS STYLE */
+body{
+    font: 16px/28px arial, sans-serif;
+    background-color: #eaeaea;
+    color: #333;
+    background-image: url(/Img/so-white.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.topbar{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    background-color: #1A6FD1;
+    top: 0;
+    z-index: 99999;
+ }
+
+ .search form {
+    /* text-align: right; */
+    border-radius: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.img img{
+    height: 50px;
+    margin-left: 10px;
+
+}
+
+.ribbon{
+    position: absolute;
+    top: -10px;
+    right: -9px;
+}
+
+
+.container{
+    border-radius: 20PX;
+    width: 960px;
+    margin: 100PX auto;
+    background-color: #E1EBF7;
+    position: relative;
+}
+.header{
+    padding: 20px;
+}
+
+.header .judul{
+    font-size: 40px;
+    font-weight: bold; 
+    padding: 5px; 
+}
+
+.header ul li{
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.header a{
+    text-decoration: none;
+    color: #8D8C8A ;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.header a:hover{
+    background-color: #1A6FD1 ;
+    color: white;
+}
+
+.hero  {
+    height: 350px;
+    background-image: url(Img/bgHero.jpg) ;
+    background-size: cover;
+    background-position: 0 -200px;
+    border-radius: 30px;
+}
+
+.container .hero{
+    margin: 0 20px 20px 20px;
+}
+
+.main{
+    padding: 20px;
+    width: 600px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.main .subJudul{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.main .penulis{
+    font-size: 12px;
+    color: #8D8C8A;
+    font-style: italic;
+    letter-spacing: 1px;
+    margin-top: -3px;
+}
+
+.main a{
+    text-decoration: none;
+    color:#0f8bce ;
+}
+
+.main p{
+    font-size: 15px;
+    margin-bottom: 20PX;
+}
+
+.paragraf p{
+    text-indent: 30px;
+    text-align: justify;
+}
+
+.sideBar{
+    width: 350px;
+    float: right;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.sideBar img{
+    width:100px;
+    height: 100px;
+    float: left;
+    margin-right:20px ;
+    border-radius: 20px;
+}
+
+.sideBar p{
+    text-align: justify;
+    margin-right: 20px;
+    padding-bottom: 10px;
+    text-indent: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #8D8C8A;
+}
+.sideBar h2{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.sideBar h3{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-style: oblique;
+    font-variant: small-caps;
+}
+
+footer{
+    background-color: #333;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+footer p{
+    padding: 20px;
+    margin:auto;
+    color: rgb(208, 205, 205);
+    text-align: center;
+}
+
+footer a{
+    color:inherit;
+    text-decoration: none;
+}
+
+
+
+
+
